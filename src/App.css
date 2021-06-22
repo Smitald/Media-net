@@ -1,0 +1,113 @@
+.App {
+display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  box-shadow: none;
+}
+table{
+  border-spacing: 0;
+  border: 1px solid #ededed;
+  width:100%;
+  margin-bottom: 50px;
+}
+table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+table th, table td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+  position: relative;
+  text-align: left;
+  
+}
+label{
+  padding: 10px;
+}
+
+.pagination{
+ 
+  text-align: center;
+}
+.prev{
+  float: left;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.next{
+  float: right;
+  font-size: 3rem;
+  cursor: pointer;
+}
+#search{
+  width: 98%;
+}
+
+.grey{
+color: grey;
+}
+.filter-container{
+  border: none;
+  margin-bottom: 0;
+}
+.filter-container tr:nth-child(even) {
+  background-color:#ffff;
+}
+.filter-container th, table td {
+  margin: 0;
+  padding: 0.5rem;
+  border-bottom: none;
+  border-right: none;
+  position: relative;
+  text-align: left;
+}
+input:focus{
+  outline: none;
+}
+.pagenum{
+ font-weight: bold;
+}
